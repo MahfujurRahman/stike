@@ -145,6 +145,7 @@ ul.header-menu li:hover .mega-menu{
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    border-radius: 5px; 
 }
 .m-btt {
     text-align:  center;
@@ -179,4 +180,13 @@ a.mega-btt:hover {
     font-size:  20px;
     letter-spacing:  1px;
     line-height:  2;
+}
+a.read-mor {
+    text-transform: uppercase;
+    color: green;
+    font-size: 20px;
+    font-weight: 600;
+}
+a.read-mor:hover{
+    text-decoration: none;
 }
