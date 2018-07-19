@@ -10,7 +10,12 @@
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
- 
+ a.treger-menu{
+     display: block;
+ }
+ .header-menu{
+     display: none;
+ }
     
 }
 /* Wide Mobile Layout: 480px. */

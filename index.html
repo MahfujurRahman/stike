@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Quickstart pack</title>
-
+        <title>Quickstart pack</title><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
@@ -14,6 +14,21 @@
         
     </head>
     <body>
+
+
+        <div class="hide-menu">
+            <span class="menu-close"><i class="fas fa-times"></i></span>
+
+            <ul class="top-menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">pages</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-overlay"></div>
 
         <div class="header affix">
             <div class="container">
@@ -73,6 +88,13 @@
                                 </li>
                                 <li><a href="#">pages</a></li>
                             </ul>
+                            <a href="" class="treger-menu text-right">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +112,7 @@
                             beatae obcaecati doloremque odio molestiae a aspernatur veniam quo 
                             officiis architecto amet dolor dolore quam, natus voluptatem 
                             sapiente, fugiat exercitationem. Praesentium, eos ullam!<a href="" data-toggle="modal" data-target="#learn-more" class="read-mor">read more</a></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            <p>Lorem ipsum dolor sit<a href="#" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">ABCD</a> amet consectetur adipisicing elit. 
                                 Neque laborum iure veritatis ipsa quo harum mollitia similique!
                                  Officia, adipisci vel?</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam 
@@ -98,10 +120,12 @@
                             molestias dolor eius molestiae soluta ullam non. Magni deleniti 
                             beatae obcaecati doloremque odio molestiae a aspernatur veniam quo 
                             officiis architecto amet dolor dolore quam, natus voluptatem 
-                            sapiente, fugiat exercitationem. Praesentium, eos ullam!</p>
+                            sapiente, fugiat exercitationem.
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Neque laborum iure veritatis ipsa quo harum mollitia similique!
                                  Officia, adipisci vel?</p>
+                                 <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" 
+                                 title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam 
                             consectetur amet maiores nobis, atque deserunt delectus esse dolorum 
                             molestias dolor eius molestiae soluta ullam non. Magni deleniti 
@@ -116,6 +140,47 @@
             </div>
         </div>
 
+
+
+        <div class="counter">
+                <div class="container">
+                    <div class="row">
+                        <div class="cauntap-titek">
+                         <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="singel-list" id="singel-list">
+                                <p class="counter-number"><span>100</span>%</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, excepturi?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="singel-list" id="singel-list">
+                                <p class="counter-number"><span>55256</span></p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, excepturi?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="singel-list" id="singel-list">
+                                <p class="counter-number"><span>12545</span>+</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, excepturi?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="singel-list" id="singel-list">
+                                <p class="counter-number"><span>12545</span></p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, excepturi?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        
         <div class="modal fade" id="learn-more">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
@@ -134,13 +199,14 @@
                     </div>
 
 
-
        
         
         
 
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
