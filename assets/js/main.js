@@ -29,12 +29,14 @@
             delay: 10,
             time: 1000
         });
-        $('#singel-list').waypoint(function() {
-            $(".counter-number span").css({ 
-                  opacity: "1",
-                  marginTop: "0"
-                });
-          }, { offset: 150 });
+
+        var waypoint = new Waypoint({
+            element: document.getElementById('element-waypoint'),
+            handler: function(direction) {
+              notify(this.element.id + ' triggers at ' + this.triggerPoint)
+            },
+            offset: '75%'
+          })
 
 
 
